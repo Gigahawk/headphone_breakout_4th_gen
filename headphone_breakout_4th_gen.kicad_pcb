@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 14)
     (tracks 26)
     (zones 0)
     (modules 4)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 1)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "export_headphone/"))
   )
 
   (net 0 "")
@@ -120,7 +120,7 @@
   (module Gigahawk:IPOD_4TH_REMOTE_BREAKOUT (layer F.Cu) (tedit 5FFC2FAF) (tstamp 5FFC7AA6)
     (at 0 -6.7 270)
     (path /5FFDDD7C)
-    (fp_text reference J4 (at -7.62 -10.795 90) (layer F.SilkS)
+    (fp_text reference J4 (at -9.175 -13.335 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x04 (at -5.08 -13.335 90) (layer F.Fab)
@@ -229,7 +229,7 @@
   (module Gigahawk:54-00174 (layer F.Cu) (tedit 5FFC11BC) (tstamp 5FFC460A)
     (at 25.4 0 180)
     (path /5FFCD5EA)
-    (fp_text reference J3 (at 0 0.5) (layer F.SilkS)
+    (fp_text reference J3 (at 5.715 4.445) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value AudioJack4 (at 0 -0.5 180) (layer F.Fab)
@@ -302,6 +302,9 @@
     )
   )
 
+  (gr_text JLCJLCJLCJLC (at 8.89 -10.795 270) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
   (gr_arc (start 2.54 6.35) (end 0 6.35) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 24.13 6.35) (end 24.13 8.89) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 24.13 -16.51) (end 26.67 -16.51) (angle -90) (layer Edge.Cuts) (width 0.05))
@@ -351,7 +354,7 @@
   (segment (start 5.08 -14.32) (end 2.54 -14.32) (width 1) (layer F.Cu) (net 7))
   (segment (start 5.08 -6.7) (end 2.54 -6.7) (width 1) (layer F.Cu) (net 8))
 
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 606573B1) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -496,7 +499,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 604DA925) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 606573AE) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
